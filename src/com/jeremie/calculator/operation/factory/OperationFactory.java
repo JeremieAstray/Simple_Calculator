@@ -35,8 +35,8 @@ public class OperationFactory {
 	}
 	
 	private static Properties getProperties(){
-		File pFile = new File(
-				"d:/temporary/programme/java OO进阶/Simple_Calculator/src/com/jeremie/calculator/run/Operation.properties"); 
+		File pFile = new File(System.getProperty("user.dir") + 
+				"/src/com/jeremie/calculator/run/Operation.properties"); 
 		Properties p = new Properties();
 		try {
 			FileInputStream pInStream = null;
